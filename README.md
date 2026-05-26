@@ -1,3 +1,4 @@
+
 # TaskFlow - Full-Stack Task Manager
 
 TaskFlow is a polished Kanban task manager built for an internship assignment. Registered users receive a private workspace where they can create, edit, delete and move tasks through **Todo**, **In Progress** and **Done** stages.
@@ -218,4 +219,6 @@ Alternatively, choose `frontend` as the base directory, `npm run build` as the b
 - `localStorage` JWT persistence is simple for an assignment and works with independent frontend/backend hosting, but an HTTP-only secure cookie approach provides stronger protection against token theft in a larger production system.
 - Native drag-and-drop keeps dependencies small, but a dedicated accessible drag-and-drop library would improve touch gestures and keyboard reordering if board interaction grows.
 - The implementation avoids pagination because a personal internship-demo task board is expected to remain small; high-volume usage should add pagination and indexes tailored to queries.
-
+## Snapshots of work 
+<img width="1919" height="914" alt="Screenshot 2026-05-26 145832" src="https://github.com/user-attachments/assets/0435e854-445a-42d4-92b0-a09191edb857" />
+<img width="1901" height="912" alt="Screenshot 2026-05-26 150002" src="https://github.com/user-attachments/assets/077167fc-ae8d-40ef-a8fc-f8db0972366d" />
