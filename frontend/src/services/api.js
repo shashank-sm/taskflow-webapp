@@ -15,8 +15,17 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-export const getErrorMessage = (error) =>
-  error.response?.data?.message || "Something went wrong. Please try again.";
+export const getErrorMessage = (error) => {
+  if (error.response?.data?.message) {
+    return error.response.data.message;
+  }
+
+  if (error.request) {
+    return "Unable to reach the backend. Make sure the API server is running.";
+  }
+
+  return "Something went wrong. Please try again.";
+};
 
 export default api;
 
